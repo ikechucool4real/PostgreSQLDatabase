@@ -1,5 +1,3 @@
-sudo docker stop my-postgresql
-sudo docker rm my-postgresql
 mkdir -p pgdata
 sudo docker run -p 5432:5432 -d \
     --name my-postgresql \
