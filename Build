@@ -2,7 +2,7 @@ sudo mkdir -p pgdata
 sudo docker run -p 5432:5432 -d \
     --name my-postgresql \
     -e POSTGRES_PASSWORD=secret \
-    -e POSTGRES_USER=postgres \
+    -e POSTGRES_USER=root \
     -v "$PWD/pgdata":/var/lib/postgresql/data \
     postgres
 sleep 30
