@@ -5,7 +5,4 @@ sudo docker run -p 5432:5432 -d \
     -e POSTGRES_USER=root \
     -v "$PWD/pgdata":/var/lib/postgresql/data \
     postgres
-sleep 30
-sudo docker exec my-postgresql psql <<EOF
-CREATE DATABASE airflow;
-EOF
+
