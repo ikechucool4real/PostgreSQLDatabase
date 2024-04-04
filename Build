@@ -6,7 +6,7 @@ sudo docker run -p 5432:5432 -d \
     -v "$PWD/pgdata":/var/lib/postgresql/data \
     postgres
 sleep 30
-sudo docker exec my-postgresql psql -U postgres -psecret <<EOF
+sudo docker exec my-postgresql psql <<EOF
 CREATE DATABASE airflow
     WITH
     ENCODING = 'UTF8'
