@@ -6,8 +6,9 @@ sudo docker run -p 5432:5432 -d \
     -v "$PWD/pgdata":/var/lib/postgresql/data \
     postgres
 sleep 30
-sudo docker exec my-postgresql psql -U postgres -p secret <<EOF
-CREATE DATABASE IF NOT EXISTS airflow
+sudo docker exec my-postgresql psql -U postgres -W -d airflow <<EOF
+DROP DATABASE IF EXISTS airflow;
+CREATE DATABASE airflow
     WITH
     ENCODING = 'UTF8'
     LC_COLLATE = 'en_GB.UTF-8'
