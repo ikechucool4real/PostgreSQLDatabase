@@ -35,8 +35,8 @@ CREATE TABLE DimGeoLocation (
     country_name VARCHAR(30),
     city VARCHAR(30),
     State VARCHAR(50),
-    latitude VARCHAR(20),
-    longitude VARCHAR(20)
+    latitude VARCHAR(30),
+    longitude VARCHAR(30)
 );
 
 CREATE TABLE DimOS (
