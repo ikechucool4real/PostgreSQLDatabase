@@ -30,13 +30,13 @@ CREATE TABLE DimHTTPStatus (
 );
 
 CREATE TABLE DimGeoLocation (
-    IP VARCHAR(20),
-    country_code VARCHAR(20),
-    country_name VARCHAR(30),
-    city VARCHAR(30),
-    State VARCHAR(50),
-    latitude VARCHAR(30),
-    longitude VARCHAR(30)
+    IP VARCHAR(100),
+    country_code VARCHAR(100),
+    country_name VARCHAR(100),
+    city VARCHAR(100),
+    State VARCHAR(100),
+    latitude VARCHAR(100),
+    longitude VARCHAR(100)
 );
 
 CREATE TABLE DimOS (
