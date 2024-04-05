@@ -31,7 +31,7 @@ CREATE TABLE DimHTTPStatus (
 
 CREATE TABLE DimGeoLocation (
     IP VARCHAR(20),
-    country_code VARCHAR(10),
+    country_code VARCHAR(20),
     country_name VARCHAR(30),
     city VARCHAR(30),
     State VARCHAR(50),
