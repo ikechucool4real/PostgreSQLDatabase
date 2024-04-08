@@ -23,3 +23,10 @@ sudo docker run -p 5432:5432 -d \
     -v "$PWD/pgdata":/var/lib/postgresql/data \
     postgres
 
+#Copy files to postgres
+sudo gsutil cp -r gs://star_schema/Airflow/StarSchema/* ./pgdata/
+sudo cp script.sql ./pgdata/
+
+#Execute postgres script
+sleep 20
+sudo docker exec -it my-postgresql psql -U root -d airflow -f /var/lib/postgresql/data/script.sql
