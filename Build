@@ -24,7 +24,7 @@ sudo docker run -p 5432:5432 -d \
     postgres
 
 #Copy files to postgres
-sudo gsutil cp -r gs://star_schema/Airflow/StarSchema/* ./pgdata/
+sudo gsutil cp -r gs://star_schema/ike-airflow/StarSchema/* ./pgdata/
 sudo cp script.sql ./pgdata/
 
 #Execute postgres script
