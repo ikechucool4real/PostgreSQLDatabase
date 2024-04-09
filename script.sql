@@ -81,7 +81,7 @@ CREATE TABLE OutFact1 (
 
 COPY DimBrowser FROM './DimBrowser.txt' DELIMITER ',' CSV HEADER;
 COPY DimDate FROM './DimDate.txt' DELIMITER ',' CSV HEADER;
-COPY DimFileInfo FROM './DimFileInfo.txt' DELIMITER ',' CSV HEADER;
+COPY DimFileInfo FROM './DimFileName.txt' DELIMITER ',' CSV HEADER;
 COPY DimFileSize FROM './DimFileSize.txt' DELIMITER ',' CSV HEADER;
 COPY DimHTTPStatus FROM './DimHTTPStatus.txt' DELIMITER ',' CSV HEADER;
 COPY DimGeoLocation FROM './DimGeoLocation.txt' DELIMITER ',' CSV HEADER;
