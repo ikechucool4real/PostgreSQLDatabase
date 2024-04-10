@@ -21,7 +21,7 @@ sudo docker run -p 5432:5432 -d \
     -e POSTGRES_USER=root \
     -e POSTGRES_DB=airflow \
     -v "$PWD/pgdata":/var/lib/postgresql/data \
-    postgres -c 'max_connection=200'
+    postgres
 
 #Copy files to postgres
 sudo gsutil cp -r gs://ike-airflow/StarSchema/* ./pgdata/
